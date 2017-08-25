@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String stringRealValue = this.mViewHolder.editValue.getText().toString();
                 if (!stringRealValue.isEmpty()) {
                     Double realValue = Double.valueOf(stringRealValue);
-                    this.mViewHolder.textDollar.setText(String.format("US$ %.2f", realValue * 3.1604));
-                    this.mViewHolder.textEuro.setText(String.format("\u20ac$ %.2f", realValue * 3.7413));
+                    this.mViewHolder.textDollar.setText(String.format("US$ %,.2f", realValue * 3.1604));
+                    this.mViewHolder.textEuro.setText(String.format("\u20ac$ %,.2f", realValue * 3.7413));
                 }
         }
     }
